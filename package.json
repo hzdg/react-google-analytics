@@ -1,0 +1,50 @@
+{
+  "name": "react-google-analytics",
+  "version": "0.1.2",
+  "description": "Google Analytics component for React",
+  "main": "./lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "once": "~1.3.0"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.7.1",
+    "browserify": "~3.33.0",
+    "browserify-shim": "~3.3.2",
+    "gulp": "~3.5.6",
+    "gulp-bump": "~0.1.6",
+    "gulp-coffee": "~1.4.1",
+    "gulp-util": "~2.2.14",
+    "gulp-browserify": "~0.5.0",
+    "gulp-connect": "~1.0.9",
+    "gulp-rename": "~1.2.0",
+    "cors": "~2.2.0"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "scripts": {
+    "prepublish": "gulp build",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hzdg/react-google-analytics.git"
+  },
+  "keywords": [
+    "react-component",
+    "react",
+    "svg",
+    "component"
+  ],
+  "author": "Matthew Dapena-Tretter <m@tthewwithanm.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hzdg/react-google-analytics/issues"
+  },
+  "browserify-shim": {
+    "react": "global:React"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "react-google-analytics",
+  "version": "0.1.2",
+  "authors": [
+    "Matthew Dapena-Tretter <m@tthewwithanm.com>"
+  ],
+  "description": "Google Analytics component for React",
+  "main": "./standalone/react-google-analytics.js",
+  "keywords": [
+    "react-component",
+    "react",
+    "svg",
+    "component"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/hzdg/react-google-analytics",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
