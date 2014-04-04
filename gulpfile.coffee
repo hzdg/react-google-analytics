@@ -30,9 +30,9 @@ gulp.task 'build:browser', ->
   gulp.src './src/index.coffee'
     .pipe coffee(bare: true).on('error', gutil.log)
     .pipe browserify
-      standalone: 'ReactInlineSVG'
+      standalone: 'ReactGoogleAnalytics'
       transform: ['browserify-shim']
-    .pipe rename('react-inlinesvg.js')
+    .pipe rename('react-google-analytics.js')
     .pipe gulp.dest('./standalone/')
 
 gulp.task 'build:tests', ->
