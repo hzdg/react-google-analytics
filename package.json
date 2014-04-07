@@ -1,13 +1,12 @@
 {
   "name": "react-google-analytics",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Google Analytics component for React",
   "main": "./lib/index.js",
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "coffee-script": "~1.7.1",
     "browserify": "~3.33.0",
