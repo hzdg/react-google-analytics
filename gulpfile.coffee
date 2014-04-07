@@ -4,7 +4,6 @@ coffee = require 'gulp-coffee'
 browserify = require 'gulp-browserify'
 rename = require 'gulp-rename'
 connect = require 'gulp-connect'
-cors = require 'cors'
 gbump = require 'gulp-bump'
 
 
@@ -47,17 +46,9 @@ gulp.task 'testserver', connect.server
   root: [__dirname]
   port: 1337
   livereload: false
-  middleware: -> [cors()]
   open:
     file: 'test/index.html'
     browser: 'Google Chrome'
 
-# A server with another port for testing CORS
-gulp.task 'xdomainserver', connect.server
-  root: [__dirname]
-  port: 1338
-  livereload: false
-  middleware: -> [cors()]
-
-gulp.task 'test', ['build:browser', 'build:tests', 'xdomainserver', 'testserver']
+gulp.task 'test', ['build:browser', 'build:tests', 'testserver']
 gulp.task 'build', ['build:node', 'build:browser']
